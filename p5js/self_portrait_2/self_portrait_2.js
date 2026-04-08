@@ -9,7 +9,7 @@ fill(0);
 ellipse(500, 325, 125, 125);
 ellipse(100, 325, 125, 125);
 //hair top and bottom
-fill(255,255,0);
+fill(255,192,0);
 ellipse(125, 250, 125, 125);
 ellipse(475, 250, 125, 125);
 ellipse(450, 400, 125, 125);
@@ -18,14 +18,30 @@ ellipse(150, 400, 125, 125);
 strokeWeight(0);
 ellipse(500, 325, 113, 113);
 ellipse(100, 325, 113, 113);
+//hair lighting
+fill(255,255,0)
+ellipse(125+6, 250-6, 90, 90);
+ellipse(475+6, 250-6, 90, 90);
+ellipse(450+6, 400-6, 90, 90);
+ellipse(150+6, 400-6, 90, 90);
+ellipse(500+6, 325-6, 90, 90);
+ellipse(100+6, 325-6, 90, 90);
+ellipse(465, 325-6, 90, 90);
+ellipse(147, 325-6, 90, 90);
 //head base
 strokeWeight(12);
-fill(255);
+fill(192,224,255);
 ellipse(300, 300, 300, 300);
+fill(255);
+strokeWeight(0);
+ellipse(310,300,260,260);
 //hat base
+strokeWeight(12);
+stroke(32,32,128);
 fill(0);
 arc(300, 240, 300, 300,PI,0);
 //hat emblem base
+stroke(0);
 fill(255,255,0)
 ellipse(300, 155, 100, 80);
 //hat emblem indent
@@ -40,28 +56,42 @@ ellipse(600-280, 150, 50, 50);
 fill(0);
 strokeWeight(0);
 ellipse(300, 240, 330, 150);
+//hat brim rimlight
+strokeWeight(12);
+stroke(32,32,128);
+arc(300, 240, 318, 136,PI,TWO_PI);
 //forehead brim overlay
-fill(255);
+strokeWeight(0);
+stroke(0);
+fill(192,224,255);
 ellipse(300, 280, 285, 100);
+fill(255);
+ellipse(310, 300, 260, 90);
 //eyes
 strokeWeight(12);
 strokeJoin(ROUND);
-rect(315,299,90,52)
-ellipse(240, 340, 90, 90);
-arc(360, 345, 90, 90,0,PI);
-arc(360, 305, 90, 90,PI,0);
+rect(312,299,90,52)
+ellipse(237, 340, 90, 90);
+arc(357, 345, 90, 90,0,PI);
+arc(357, 305, 90, 90,PI,0);
 //torso
 fill(255,128,0)
-rect(160,525,280,280);
-//jacket left right
+rect(160,530,280,280);
+//jacket arms
 fill(0,0,255)
-rect(160,525,100,280);
-rect(340,525,100,280);
+triangle(50,700,160,500,160,700)
+triangle(550,700,440,500,440,700)
+//jacket left right
+rect(160,515,80,280);
+rect(360,515,80,280);
 //jacket collar
-ellipse(200,525,120,40);
-ellipse(400,525,120,40);
+ellipse(190,515,100,40);
+ellipse(410,515,100,40);
 //jacket zipper
 fill(0,255,0);
-rect(260,525,20,280);
-rect(320,525,20,280);
+rect(240,530,25,280);
+rect(335,530,25,280);
+//zipper teeth
+rect(240,555,25,25)
+rect(335,555,25,25)
 }
