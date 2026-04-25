@@ -170,7 +170,7 @@ function levelTwo(){
   rotate(obstAngle); // Rotate by the current angle
   rect(0, 0, 300, 25); // Draw at (0,0)
   pop(); // Restore original state
-  obstAngle += 3;
+  obstAngle -= 3;
   
   rect(100, obstY, 200, 50);
    obstY += obstSpeedY;
